@@ -4,10 +4,16 @@ class LayoutDemo extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     // TODO: implement build
-    return Column(
-      children: <Widget>[
-        IconBadge(Icons.pool, size: 64.0,)
-      ],
+    return Container(
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+        crossAxisAlignment: CrossAxisAlignment.end,
+        children: <Widget>[
+          IconBadge(Icons.pool),
+          IconBadge(Icons.beach_access,size: 64.0),
+          IconBadge(Icons.account_balance_wallet)
+        ],
+      ),
     );
   }
 }
